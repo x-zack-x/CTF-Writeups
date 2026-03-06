@@ -18,10 +18,15 @@ First the description scpecified the type of the file which is log so its gonna 
 
 ## step 2 -What i tried
 >"curl" i used it to get the log via a link.
+ ![curl cmd](images/image1.jpeg)
 >"cat"& "head" i used cat to show the content of the log pipped it with head to see only the first 20 line to get an idea of the structure.
+  ![curl cmd](images/image2.jpeg)
 >"grep" i used it with cat because i noticed that the flag part have a specific structure "FLAGPART" which is different than the other activities.
+  ![curl cmd](images/image5.jpeg)
 >"cut -c" i use cut we the previous command to leave only the interesting field .
+  ![curl cmd](images/image3.jpeg)
 "sort -u" is used it to eradicate the duplicates so i can assemble the flag alone.
+  ![curl cmd](images/image4.jpeg)
 ## step 3 -the solution
 After filtering the content of the log and leaving only the flag part we get the flag parts .The only thing left is to bring the piece together so i manually assembled them in order to reconstruct the full flag.
 
