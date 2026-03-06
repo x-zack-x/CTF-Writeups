@@ -17,10 +17,14 @@ First from the description i can understand that the content of the file is usel
 
 ##step 2 -What i tried
 >"curl" to get the file content via a link.
+ ![curl cmd](images/image1.jpeg)
 >"cat" to see the content of the file which was unreadable.
 >"pdfinfo" to get the metadata of the file but it was unavailable in the webshell.
+ ![pdfinfo cmd](images/image2.jpeg)
 >"exiftool"(exchangeable image file format) to see the metadata hidden in the file.
+ ![exiftool results](images/image3.jpeg)
 >"cyberchef"(web version)to decode the unreadable phrase in the field author.
+ ![cyberchef results](images/image4.jpeg)
 
 ##step 3 -the solution
 After using exiftool to get the metadata ,i noticed the author field with an unreadable phrase containing letters,numbers and ending with = which was a strong indicator of base64 encoding ,so used cyberchef to decode it and it was the actual flag.
